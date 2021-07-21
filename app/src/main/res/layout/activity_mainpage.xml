@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".mainpage">
+
+  <TableLayout
+      android:layout_width="280dp"
+      android:layout_height="270dp"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentTop="true"
+      android:layout_marginTop="33dp"
+      android:layout_marginEnd="64dp">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <EditText
+          android:id="@+id/n"
+          android:layout_width="200dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="15dp"
+          android:hint="Name"
+          android:inputType="text"
+          android:textAlignment="center"
+          android:textColor="@color/black"
+          android:textSize="12dp" />
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <EditText
+          android:id="@+id/ag"
+          android:layout_width="200dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="15dp"
+          android:hint="Age"
+          android:textAlignment="center"
+          android:textColor="@color/black"
+          android:inputType="number"
+          android:textSize="12dp" />
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <EditText
+          android:id="@+id/g"
+          android:layout_width="250dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="15dp"
+          android:hint="Gender"
+          android:textAlignment="center"
+          android:textColor="@color/black"
+          android:inputType="text"
+          android:textSize="12dp" />
+
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <EditText
+          android:id="@+id/cam"
+          android:layout_width="250dp"
+          android:layout_height="wrap_content"
+          android:layout_margin="15dp"
+          android:text="http:// :8080"
+          android:textAlignment="center"
+          android:textColor="@color/black"
+          android:inputType="text"
+          android:textSize="12dp" />
+
+
+    </TableRow>
+
+
+  </TableLayout>
+
+
+  <Button
+      android:id="@+id/button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentEnd="true"
+      android:layout_marginTop="307dp"
+      android:layout_marginEnd="139dp"
+      android:text="Register" />
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/rec"
+      android:layout_width="390dp"
+      android:layout_height="400dp"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentEnd="true"
+      android:layout_marginTop="381dp"
+      android:layout_marginEnd="11dp" />
+
+  <ImageButton
+      android:id="@+id/set"
+      android:layout_width="37dp"
+      android:layout_height="35dp"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentEnd="true"
+      android:layout_marginTop="313dp"
+      android:layout_marginEnd="93dp"
+      app:srcCompat="@android:drawable/ic_menu_manage" />
+
+
+</RelativeLayout>
